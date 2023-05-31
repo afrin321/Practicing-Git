@@ -39,7 +39,7 @@
       }
 
       .mb {
-        margin-bottom: 100px;
+        margin-bottom: 75px;
       }
     </style>
   </head>
@@ -131,7 +131,9 @@
     </p>
     <p>
       I will set the class .mb 's margin-bottom as 100px in main and 50px in
-      dev-styles.
+      dev-styles. After getting the conflict, I manually changed the value to
+      75px in main branch. Committed the changes, tested and pushed to main
+      branch.
     </p>
     <p>
       <span class="code"># git add . </span> <br />
@@ -142,6 +144,9 @@
       <span class="code"># git commit -m "added .mb - 50px"</span> <br />
       <span class="code"># git push origin dev-styles</span> <br /><br />
       <span class="code"># git checkout main</span> <br />
+      <span class="code"># git add . </span> <br />
+      <span class="code"># git commit -m "Resolve merge conflict"</span> <br />
+      <span class="code"># git push origin main</span> <br />
     </p>
     <script>
       // JavaScript code (if needed)
