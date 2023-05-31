@@ -37,9 +37,13 @@
         border-radius: 4px;
         font-family: Consolas, monospace;
       }
+
+      .mb {
+        margin-bottom: 100px;
+      }
     </style>
   </head>
-  <body>
+  <body class="mb">
     <h1>Learning Git 😊</h1>
     <p>This an attempt to learn and practice git in a simple way.</p>
     <br />
@@ -100,12 +104,44 @@
       <span class="code"># git push origin dev-styles</span> <br />
     </p>
     <br />
-    <h2>Step 5: Merge changes and resolve conflicts.</h2>
+    <h2>Step 5: Merge changes</h2>
     <p>
       Once the new branch dev-styles is created and I am happy with the changes,
       I want to merge the changes of both branches into the 'main' branch. Here
-      we will see how to merge changes and and how to deal with "merge
-      conflicts".
+      we will see how to merge changes and in the next step we will see how to
+      deal with "merge conflicts".
+    </p>
+    <p>
+      To merge changes, we need to need to be in the branch we want to merge
+      changes into. However, we must push any changes from the current branch
+      before checkout so that the changes are not lost.
+    </p>
+    <p>
+      <span class="code"># git add . </span> <br />
+      <span class="code"># git commit -m "updated html - step 5"</span> <br />
+      <span class="code"># git push origin dev-styles</span> <br /><br />
+      <span class="code"># git checkout main </span> <br />
+      <span class="code"># git push origin main</span> <br />
+    </p>
+    <h2>Step 6: Resolve conflicts</h2>
+    <p>
+      To create a conflict, I will create add a style to both branches but the
+      same line will be different in each. After push changes in both branches,
+      I will try to merge branch dev-styles into main.
+    </p>
+    <p>
+      I will set the class .mb 's margin-bottom as 100px in main and 50px in
+      dev-styles.
+    </p>
+    <p>
+      <span class="code"># git add . </span> <br />
+      <span class="code"># git commit -m "added .mb - 100px"</span> <br />
+      <span class="code"># git push origin main</span> <br /><br />
+      <span class="code"># git checkout dev-styles </span> <br />
+      <span class="code"># git add . </span> <br />
+      <span class="code"># git commit -m "added .mb - 50px"</span> <br />
+      <span class="code"># git push origin dev-styles</span> <br /><br />
+      <span class="code"># git checkout main</span> <br />
     </p>
     <script>
       // JavaScript code (if needed)
