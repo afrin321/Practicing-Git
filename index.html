@@ -53,7 +53,8 @@
     <h2>Step 2: Create a remote repository in Github and Push changes.</h2>
     <p>
       I then created a remote Github repo and added the file(s) to the remote
-      github repo.
+      github repo. Over here, the local repository will keep track of the
+      changes in the remote branch (main).
     </p>
     <p>
       <span class="code"># git add .</span>
@@ -94,6 +95,17 @@
     <p>
       <span class="code"># git branch dev-styles</span> <br />
       <span class="code"># git checkout dev-styles</span> <br />
+      <span class="code"># git add . </span> <br />
+      <span class="code"># git commit -m "added styles"</span> <br />
+      <span class="code"># git push origin dev-styles</span> <br />
+    </p>
+    <br />
+    <h2>Step 5: Merge changes and resolve conflicts.</h2>
+    <p>
+      Once the new branch dev-styles is created and I am happy with the changes,
+      I want to merge the changes of both branches into the 'main' branch. Here
+      we will see how to merge changes and and how to deal with "merge
+      conflicts".
     </p>
     <script>
       // JavaScript code (if needed)
