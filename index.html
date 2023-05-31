@@ -17,14 +17,38 @@
       <span class="code"># git init</span>
     </p>
     <br />
-    <h2>Step 2: Create a remote repository in Github and Push changes</h2>
+    <h2>Step 2: Create a remote repository in Github and Push changes.</h2>
     <p>
       I then created a remote Github repo and added the file(s) to the remote
       github repo.
     </p>
     <p>
-      <br />
       <span class="code"># git add .</span>
+      <br />
+      <span class="code"># git commit -m "first commit"</span>
+      <br />
+      <span class="code"># git branch -M main</span>
+      <br />
+      <span class="code"
+        ># git remote add origin
+        https://github.com/afrin321/Practicing-Git.git</span
+      >
+      <br />
+      <span class="code"># git push -u origin main</span>
+    </p>
+    <br />
+    <h2>Step 3: Pull and Push changes.</h2>
+    <p>
+      Next, I added a readme.md file from the remote github repository. This
+      created a change in the remote and local repository. Now I first pull the
+      change from the remote repo. By this time, I have also made some changes,
+      so now I will push these changes into remote repo.
+    </p>
+    <p>
+      <span class="code"># git pull origin main</span> <br />
+      <span class="code"># git add . </span> <br />
+      <span class="code"># git commit -m "updated html file" </span> <br />
+      <span class="code"># git push origin main</span> <br />
     </p>
   </body>
 </html>
